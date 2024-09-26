@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using RabbitMQ.Client;
+using RabbitMQ.Client.Events;
 
 ConnectionFactory factory = new ConnectionFactory();
 factory.Uri = new Uri("amqp://guest:guest@localhost:5672");
@@ -13,17 +14,29 @@ string routingKey = "demo-routing-key";
 string queueName = "DemoQueue";
 
 channel.ExchangeDeclare(exchangeName, ExchangeType.Direct);
-channel.QueueDeclare(queueName, durable:false, exclusive: false, autoDelete: false, arguments: null);
+channel.QueueDeclare(queueName, durable: false, exclusive: false, autoDelete: false, arguments: null);
 channel.QueueBind(queueName, exchangeName, routingKey, arguments: null);
+channel.BasicQos(0, 1, false);
 
-for (int i = 0; i < 60; i++)
+var consumer = new EventingBasicConsumer(channel);
+
+consumer.Received += (sender, args) =>
 {
-    string message = $"Message #{i}";
+    Task.Delay(TimeSpan.FromSeconds(3)).Wait();
+    var body = args.Body.ToArray();
+
+    string message = Encoding.UTF8.GetString(body);
     Console.WriteLine(message);
-    byte[] messageBytes = Encoding.UTF8.GetBytes(message);
-    channel.BasicPublish(exchangeName, routingKey, false, basicProperties: null, messageBytes);
-    Thread.Sleep(1000);
-}
+
+    channel.BasicAck(args.DeliveryTag, false);
+};
+
+string consumerTag = channel.BasicConsume(queueName, false, consumer);
+
+Console.ReadLine();
+
+channel.BasicCancel(consumerTag);
+
 
 channel.Close();
 connection.Close();
