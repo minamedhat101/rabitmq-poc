@@ -1,0 +1,17 @@
+C:\Users\Mina Medhat\source\repos\RabbitMqSender\RabbitMqSender\bin\Debug\net8.0\RabbitMqSender.exe
+C:\Users\Mina Medhat\source\repos\RabbitMqSender\RabbitMqSender\bin\Debug\net8.0\RabbitMqSender.deps.json
+C:\Users\Mina Medhat\source\repos\RabbitMqSender\RabbitMqSender\bin\Debug\net8.0\RabbitMqSender.runtimeconfig.json
+C:\Users\Mina Medhat\source\repos\RabbitMqSender\RabbitMqSender\bin\Debug\net8.0\RabbitMqSender.dll
+C:\Users\Mina Medhat\source\repos\RabbitMqSender\RabbitMqSender\bin\Debug\net8.0\RabbitMqSender.pdb
+C:\Users\Mina Medhat\source\repos\RabbitMqSender\RabbitMqSender\bin\Debug\net8.0\RabbitMQ.Client.dll
+C:\Users\Mina Medhat\source\repos\RabbitMqSender\RabbitMqSender\obj\Debug\net8.0\RabbitMqSender.csproj.AssemblyReference.cache
+C:\Users\Mina Medhat\source\repos\RabbitMqSender\RabbitMqSender\obj\Debug\net8.0\RabbitMqSender.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mina Medhat\source\repos\RabbitMqSender\RabbitMqSender\obj\Debug\net8.0\RabbitMqSender.AssemblyInfoInputs.cache
+C:\Users\Mina Medhat\source\repos\RabbitMqSender\RabbitMqSender\obj\Debug\net8.0\RabbitMqSender.AssemblyInfo.cs
+C:\Users\Mina Medhat\source\repos\RabbitMqSender\RabbitMqSender\obj\Debug\net8.0\RabbitMqSender.csproj.CoreCompileInputs.cache
+C:\Users\Mina Medhat\source\repos\RabbitMqSender\RabbitMqSender\obj\Debug\net8.0\RabbitMq.52DE6F9E.Up2Date
+C:\Users\Mina Medhat\source\repos\RabbitMqSender\RabbitMqSender\obj\Debug\net8.0\RabbitMqSender.dll
+C:\Users\Mina Medhat\source\repos\RabbitMqSender\RabbitMqSender\obj\Debug\net8.0\refint\RabbitMqSender.dll
+C:\Users\Mina Medhat\source\repos\RabbitMqSender\RabbitMqSender\obj\Debug\net8.0\RabbitMqSender.pdb
+C:\Users\Mina Medhat\source\repos\RabbitMqSender\RabbitMqSender\obj\Debug\net8.0\RabbitMqSender.genruntimeconfig.cache
+C:\Users\Mina Medhat\source\repos\RabbitMqSender\RabbitMqSender\obj\Debug\net8.0\ref\RabbitMqSender.dll
